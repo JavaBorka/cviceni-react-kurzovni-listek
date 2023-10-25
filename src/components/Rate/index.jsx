@@ -1,4 +1,3 @@
-import React from 'react';
 import './style.css';
 
 const currencies = {
@@ -7,10 +6,10 @@ const currencies = {
   GBP: { CZK: 29.067 }
 };
 
-const Rate = () => {
+const Rate = ({from}) => {
   return (
     <div className="rate">
-      <div className="rate__currency">1 USD</div>
+      <div className="rate__currency">1 {from}</div>
       <div>=</div>
       <div className="rate__value">22 CZK</div>
     </div>
