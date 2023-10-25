@@ -24,6 +24,7 @@ const App = () => {
               <option value="USD">Americký dolar</option>
               <option value="EUR">Euro</option>
               <option value="GBP">Britská libra</option>
+              <option value="CHF">Švýcarský frank</option>
             </select>
           </div>
         </form>
