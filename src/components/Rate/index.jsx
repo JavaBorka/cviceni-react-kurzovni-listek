@@ -11,7 +11,11 @@ const Rate = ({from}) => {
     <div className="rate">
       <div className="rate__currency">1 {from}</div>
       <div>=</div>
-      <div className="rate__value">22 CZK</div>
+      <div className="rate__value">
+        {from === 'USD' ? `${currencies.USD.CZK} USD` : (
+          from === 'EUR' ? `${currencies.EUR.CZK} EUR` : `${currencies.GBP.CZK} GBP`
+        )}
+      </div>
     </div>
   );
 };
